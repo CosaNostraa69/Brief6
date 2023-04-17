@@ -1,0 +1,47 @@
+
+
+.pop_up{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    top: 50%;
+    left: 30%;
+    border-radius: 30px;
+    &.hidden{
+
+    display: none;
+    }
+
+
+ 
+    .popup_title_contains{
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .popup_title{
+        color: white;
+        margin-left: 20px;
+      }
+      .popup_year{
+        margin-right: 20px;
+      }
+     
+    
+    }
+    .popup_overview{
+      color: white;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+
+    .popup_rated{
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+  }
+  

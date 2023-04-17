@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.scss" />
+    <title>NETCLIX</title>
+  </head>
+  <body>
+    <header>
+        <img id="logo" src="./assets/images/Vector.svg" alt="Logo Netclix">
+      <!-- <h1>NETCLIX</h1> -->
+      <form >
+        <img src="./assets/images/search.svg" alt="logo search">
+        <label for="search"></label>
+        <input id="search" type="search" placeholder="Rechercher"/>
+        <span class="caret"></span>
+      </form>
+    </header>
+    <main>
+      <article>
+        <div class="hero_content">
+        <div class="wrapper"> 
+            <div class="tout-box-reveal">
+              <div class="overlay-gradient"></div>
+              <img src="assets/images/affiche.jpg"
+              class="image-hover">
+              <img src="./assets/images/avatar2.jpg" class="image">
+              <div class="content-wrapper">
+                <div class="content">
+                  <span class="heading">AVATAR 2</span>
+                    </div>
+                </div>
+               
+                <div class="content-hover">
+                    <div class="content">
+                        <span class="heading">Avatar : La Voie de l'eau</span>
+                  <span class="exerpt">Jake Sully et Neytiri sont devenus parents. L'intrigue se déroule une dizaine d'années après les événements racontés dans le long-métrage originel.  Contraints de quitter leur habitat naturel, Jake et sa famille se rendent sur les récifs, où ils pensent trouver asile. Mais ils tombent sur un clan, les Metkayina, aux mœurs différentes des leurs..."</span>
+                </div>
+              </div>
+            </div>
+        </div>
+            </div>
+            <h2 class="title">Films les plus populaires</h2>
+        <div id="movies_container"></div>
+        <h2 class="title">Films les mieux notés</h2>
+        <div id="movies_container2"></div>
+
+      </article>
+    </main>
+    <div class="pop_up hidden" id="pop_up">
+        <img alt="film" />
+        <div class="popup_title_contains">
+          <h2 class="popup_title"></h2>
+          <h3 class="popup_year"></h3>
+        </div>
+        <div class="popup_overview"></div>
+        <div class="popup_rated"></div>
+      </div>
+    <footer></footer>
+
+    <script src="./assets/script/script.ts" type="module"></script>
+
+    <script src="./assets/script/search.ts" type="module"></script>
+
+  </body>
+</html>
