@@ -22,7 +22,23 @@ export async function openPopUp(movieId) {
     popUpTitle.innerHTML = data.title;
     popUpYear.innerHTML = new Date(data.release_date).getFullYear();
     popUpOverview.innerHTML = data.overview;
-    popUpRated.innerHTML = `${data.vote_average}/10`;
+    popUpRated.innerHTML = `${data.vote_average.toFixed(1)}/10`;
+    popUp.classList.remove("hidden");
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function openPopUp2(movieId) {
+  try {
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${key}`);
+    const data = await response.json();
+    popUpImage!.src = `https://image.tmdb.org/t/p/w342${data.backdrop_path}`
+    popUpTitle.innerHTML = data.title;
+    popUpYear.innerHTML = new Date(data.release_date).getFullYear();
+    popUpOverview.innerHTML = data.overview;
+    popUpRated.innerHTML = `${data.vote_average.toFixed(1)}/10`;
     popUp.classList.remove("hidden");
 
   } catch (error) {

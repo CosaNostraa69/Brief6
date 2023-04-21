@@ -38,7 +38,7 @@ fetchMovie()
 export async function fetchMovie2() {
 
     try {
-        const response = await fetch(`${baseurl}/movie/top_rated?api_key=048688e79e8205e4d8c66bf89622c505&language=fr-FR&page=1`)
+        const response = await fetch(`${baseurl}/movie/top_rated?api_key=${key}&language=fr-FR&page=1`)
         const data = await response.json()
 
         console.log(data.results);
